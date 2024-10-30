@@ -1,0 +1,17 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Old files
+old_results/*
+old_notebooks/*
+
+# Other analysis
+**Ramon**
+**ramon**
+Wilson_Cowan*
+*.so
