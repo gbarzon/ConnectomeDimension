@@ -6,6 +6,10 @@ By tracking the temporal evolution of diffusive perturbations, we estimate a sca
 
 Overall, the dimension of the connectome may serve as a powerful descriptor for bridging the gap between structure and function in the human brain.
 
+<p align="center">
+  <img src="figures/fig_framework_small.png" width="900"/>
+</p>
+
 ## Main scripts
 - [Dimensionality_synthetic](Dimensionality_synthetic.ipynb): create synthetic networks and compute their local and global dimensions
 - [Dimensionality_connectome](Dimensionality_connectome.ipynb): compute the local and global dimensions of control and stroke subjects
