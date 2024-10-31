@@ -18,9 +18,9 @@ folder_templates = data_folder + 'templates/'
 folder_mask = data_folder + 'mask/'
 
 ### DEFINE GLOBAL VARIABLES
-parcellations = np.array([100, 200, 500, 1000])
-dict_control = {'name': 'control', 'sessions': [1, 2], 'parcs': parcellations}
-dict_stroke = {'name': 'stroke', 'sessions': [1, 2, 3], 'parcs': parcellations}
+parcellations = np.array([100, 200, 500]) #np.array([100, 200, 500, 1000])
+dict_control = {'name': 'control', 'sessions': [1], 'parcs': parcellations} #{'name': 'control', 'sessions': [1, 2], 'parcs': parcellations}
+dict_stroke = {'name': 'stroke', 'sessions': [1], 'parcs': parcellations} #{'name': 'stroke', 'sessions': [1, 2, 3], 'parcs': parcellations}
 dict_all = [dict_control, dict_stroke]
 
 thr_types = [None, 'local', 'mask']
