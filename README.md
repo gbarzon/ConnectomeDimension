@@ -9,7 +9,7 @@ Overall, the dimension of the connectome may serve as a powerful descriptor for 
 ## Main scripts
 - [Dimensionality_synthetic](Dimensionality_synthetic.ipynb): create synthetic networks and compute their local and global dimensions
 - [Dimensionality_connectome](Dimensionality_connectome.ipynb): compute the local and global dimensions of control and stroke subjects
-- [HTC](HTC.ipynb): simulate the Haimovici-Chialvo model informed by individual connectomes and compute relevant observables
+- [HTC](HTC.ipynb): simulate the Haimovici-Tagliazucchi-Chialvo model informed by individual connectomes and compute relevant observables
 - [Figures](Figures.ipynb): perform the statistical tests and generate the figures presented in the manuscript
 
 ## Additional analysis
