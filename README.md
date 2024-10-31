@@ -16,3 +16,14 @@ Overall, the dimension of the connectome may serve as a powerful descriptor for 
 - [Spectral_dimension](Spectral_dimension.ipynb): compute the spectral dimension of the connectomes
 - [SBM](SBM.ipynb): perform community detection method by the inference of a stochastic block model
 - [Figures_SI](Figures_SI.ipynb): perform the statistical tests and generate the figures presented in the supplementary materials
+
+### Dependencies
+* [DynGDim](https://github.com/barahona-research-group/DynGDim): computing the relative, local and global dimension of complex networks
+* [graph-tool](https://git.skewed.de/count0/graph-tool): an efficient python module for analysis of graphs
+
+### References
+- van den Heuvel, M. P., & Sporns, O. (2019). A cross-disorder connectome landscape of brain dysconnectivity. Nature reviews neuroscience, 20(7), 435-446.
+- Peach, R., Arnaudon, A., & Barahona, M. (2022). Relative, local and global dimension in complex networks. Nature Communications, 13(1), 3088.
+- Haimovici, A., Tagliazucchi, E., Balenzuela, P., & Chialvo, D. R. (2013). Brain Organization into Resting State Networks Emerges at Criticality on a Model of the Human Connectome. Physical review letters, 110(17), 178101.
+- Rocha, R. P., Koçillari, L., Suweis, S., De Filippo De Grazia, M., de Schotten, M. T., Zorzi, M., & Corbetta, M. (2022). Recovery of neural dynamics criticality in personalized whole-brain models of stroke. Nature Communications, 13(1), 3683.
+- Barzon, G., Nicoletti, G., Mariani, B., Formentin, M., & Suweis, S. (2022). Criticality and network structure drive emergent oscillations in a stochastic whole-brain model. Journal of Physics: Complexity, 3(2), 025010.
