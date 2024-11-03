@@ -24,6 +24,7 @@ Overall, the dimension of the connectome may serve as a powerful descriptor for 
 ## Dependencies
 * [DynGDim](https://github.com/barahona-research-group/DynGDim): computing the relative, local and global dimension of complex networks
 * [graph-tool](https://git.skewed.de/count0/graph-tool): an efficient python module for analysis of graphs
+* [neuromaps](https://github.com/netneurolab/neuromaps): comparisons between brain maps
 
 ## References
 - van den Heuvel, M. P., & Sporns, O. (2019). A cross-disorder connectome landscape of brain dysconnectivity. Nature reviews neuroscience, 20(7), 435-446.
