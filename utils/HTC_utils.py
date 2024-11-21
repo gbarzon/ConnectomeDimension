@@ -41,6 +41,19 @@ def get_Trange(r1, r2, c_min=0, c_max=1.4):
     
     return Tmin, Tmax, Tminus, Tplus
 
+@jit(nopython=nopython)
+def hrf(tau, b1=0.9, b2=0.9, c=0.35, a1=6, a2=12):
+    # Compute d1 and d2 based on the defaults
+    d1 = a1 * b1
+    d2 = a2 * b2
+    
+    # Compute the terms
+    term1 = (tau / d1)**a1 * np.exp(-(tau - d1) / b1)
+    term2 = c * (tau / d2)**a2 * np.exp(-(tau - d2) / b2)
+    
+    # Return the result
+    return term1 - term2
+
 # ---------- CLUSTER ANALYSIS ----------
 @jit(nopython=nopython)
 def DFSUtil(mask, temp, node, visited):
@@ -231,7 +244,6 @@ def run_htc(W, r1, r2, Tmin, Tmax, nT, steps, eq_steps, runs, step_clust=-1,
 
     xplus = Tplus
     yplus = Tplus / r2
-
     xminus = Tminus
     yminus = Tminus / r2
     

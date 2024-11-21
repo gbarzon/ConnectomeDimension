@@ -58,6 +58,8 @@ class data_loader:
     - in data_loader, return None if the matrix is not connected
     
     TODO:
+    - sort names based on id (otherwise when using different parcellations, the order is different)
+    
     - add column 'ctx', 'subctx' to roi dataset
     - add column with RSN to roi dataset
     
@@ -167,8 +169,14 @@ class data_loader:
         ### Define names
         t_ses = '-0' + str(self.ses) + '_space'
         t_parc = '-' + str(self.parc) + '_desc'
-        self.full_names = [file for file in os.listdir(data_folder+self.which) if (t_ses in file and t_parc in file)]
-        self.names = [file.split('_')[0] for file in self.full_names]
+        self.full_names = np.array( [file for file in os.listdir(data_folder+self.which) if (t_ses in file and t_parc in file)] )
+        self.names = np.array( [file.split('_')[0] for file in self.full_names] )
+        self.idx_sub = np.array( [int(tmp.split('-')[1]) for tmp in self.names] )
+
+        # Sort
+        self.full_names = self.full_names[np.argsort(self.idx_sub)]
+        self.names = self.names[np.argsort(self.idx_sub)]
+        self.idx_sub = self.idx_sub[np.argsort(self.idx_sub)]
         
         # Store idxs for iterator
         self.idx_max = len(self.names)
