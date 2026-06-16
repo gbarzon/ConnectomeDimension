@@ -10,6 +10,8 @@ Overall, the dimension of the connectome may serve as a powerful descriptor for 
   <img src="figures/fig_framework_small.png" width="900"/>
 </p>
 
+Barzon, G., Allegra, M., Aarabi, M. H., Pini, L., De Domenico, M., Corbetta, M., & Suweis, S. (2026). [Structural connectome dimension shapes brain dynamics in health and disease.](https://direct.mit.edu/netn/article/doi/10.1162/NETN.a.593/137105/Structural-connectome-dimension-shapes-brain?utm_source=researchgate.net&utm_medium=article) Network Neuroscience, 1-37.
+
 ## Main scripts
 - [Dimensionality_synthetic](Dimensionality_synthetic.ipynb): create synthetic networks and compute their local and global dimensions
 - [Dimensionality_connectome](Dimensionality_connectome.ipynb): compute the local and global dimensions of control and stroke subjects
